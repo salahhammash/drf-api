@@ -15,7 +15,7 @@ class GameTests(TestCase):
         test_thing = Game.objects.create(name='flower', owner=testuser1, desc="test desc ...")
         test_thing.save()
 
-    def thigs_model(self):
+    def test_games_model(self):
         gameing = Game.objects.get(id=1)
         actual_owner= str(gameing.owner)
         actual_name = str(gameing.name)
